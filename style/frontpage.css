@@ -301,6 +301,12 @@ input:focus {
 
 /*----------------FrontPage---------------------------------------------------------------------------------*/
 
+/*Alteração Gap block 02*/
+
+section#block02 div.blockbgwhite div.container div.row {
+  gap: 2em 0;
+}
+
 /* Start Iconbox Area */
 .single-course,
 .single-icon-box {
@@ -317,28 +323,30 @@ input:focus {
 }
 
 .icon-box-content {
+  position: relative;
   color: #fff;
   z-index: 1;
-  height: 100%;
+  height: 300px; /* Ajuste conforme a necessidade */
+  width: 100%;
   margin: 0;
   padding: 30px;
   cursor: pointer;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  background: linear-gradient(to bottom, #333, #111); /* Gradiente de fundo */
-  transition: all 0.6s ease; /* Transição suave */
-  gap: 2em;
+  background: linear-gradient(to bottom, #333, #111);
+  overflow: hidden;
+  transition: all 0.6s ease;
 }
 
 .icon-box-content-headcontainer {
-  width: 100%;
+  position: absolute;
+  top: 30%;
+  left: 20px; /* Alinhado à esquerda, por exemplo */
+  transform: translateY(-50%) scale(1); /* Removemos o translateX(-50%) para não centralizar horizontalmente */
+  transform-origin: left center; /* Define o ponto de âncora à esquerda do elemento */
   z-index: 4;
   display: flex;
   align-items: center;
   gap: 1em;
-  transform: scale(1.4) translateX(40px) translateY(35px); /* Mover para cima ao passar o mouse */
-  transition: transform 0.6s ease; /* Transição suave */
+  transition: transform 0.6s ease;
 }
 
 .icon-box-icon {
@@ -357,37 +365,34 @@ input:focus {
 }
 
 .iconbox-content-body {
-  padding: 0 0.5em;
-  flex-grow: 1; /* Ocupar espaço restante */
-  display: flex;
+  position: absolute;
+  top: 60%; /* Ajuste conforme o necessário */
+  left: 40px; /* Posiciona fixamente a partir da esquerda */
+  transform: translateY(0) scale(1);
+  transform-origin: left center; /* Define o ponto de ancoragem do body no lado esquerdo */
   z-index: 3;
+  display: flex;
   align-items: center;
-  justify-items: center;
+  justify-content: flex-start; /* Garante alinhamento à esquerda dentro do container body */
   font-size: 1.05em;
   opacity: 0; /* Invisível inicialmente */
-  transform: translateY(180px); /* Fora da área visível */
-  transition: opacity 1.2s, transform 0.6s ease; /* Transição de opacidade e posição */
+  transition: opacity 0.6s, transform 0.6s ease;
 }
 
+/* No hover */
 .icon-box-content:hover .icon-box-content-headcontainer {
-  transform: scale(1) translateY(0); /* Mover para cima ao passar o mouse */
+  /* Agora, ao aplicar scale, o ponto de âncora é o lado esquerdo do elemento.
+     Ajuste o translateY se precisar que suba mais. */
+  transform: translateY(-180%) scale(0.7);
+  /* Como removemos o translateX(-50%), ajuste apenas o Y para posicionar verticalmente */
 }
 
+/* No hover */
 .icon-box-content:hover .iconbox-content-body {
-  opacity: 1; /* Tornar visível ao passar o mouse */
-  transform: translateY(0); /* Trazer para a posição original */
-}
-
-@media (min-width: 430px) and (max-width: 991px) {
-  .icon-box-content-headcontainer {
-    transform: scale(1.4) translateX(80px) translateY(35px);
-  }
-}
-
-@media (min-width: 992px) and (max-width: 1199px) {
-  .icon-box-content-headcontainer {
-    transform: scale(1.4) translateX(30px) translateY(35px);
-  }
+  opacity: 1;
+  /* Ajuste apenas o translateY para movê-lo verticalmente,
+     mantendo o ancoragem lateral no mesmo ponto. */
+  transform: translateY(-140%) scale(1);
 }
 
 /* End Iconbox Area */
@@ -1102,12 +1107,6 @@ body.scrolled .scrollUp {
   .single-blog-item {
     margin-bottom: 30px;
   }
-}
-
-/*Alteração Gap block 02*/
-
-section#block02 div.blockbgwhite div.container div.row {
-  gap: 2em 0;
 }
 
 /*[@id="block02"]/div/div/div/div[4]
