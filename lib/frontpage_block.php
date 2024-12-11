@@ -631,18 +631,24 @@ function theme_almondb_frontpageblock19() {
 }
 /**
  * Frontpage block20.
- * @return url
+ * @return array
  */
 function theme_almondb_frontpageblock20() {
     global $OUTPUT;
 
     $theme = theme_config::load('almondb');
+
+    // Inicializar o contexto.
     $templatecontext['block20enabled'] = $theme->settings->block20enabled;
     if (empty($templatecontext['block20enabled'])) {
         return $templatecontext;
     }
+
+    // Configurações gerais do rodapé.
     $templatecontext['block20moodle'] = $theme->settings->block20moodle;
     $templatecontext['footerbackgroundcolor'] = $theme->settings->footerbackgroundcolor;
+
+    // Configuração do logotipo.
     switch ($theme->settings->block20logo) {
         case 'Logo':
             $templatecontext['block20logologo'] = true;
@@ -651,15 +657,31 @@ function theme_almondb_frontpageblock20() {
             $templatecontext['block20logosmall'] = true;
             break;
     }
+
+    // Coluna 1.
     $templatecontext['block20col1header'] = format_string($theme->settings->block20col1header);
     $templatecontext['block20col1caption'] = format_string($theme->settings->block20col1caption);
+
+    // Coluna 2.
     $templatecontext['block20col2header'] = format_string($theme->settings->block20col2header);
     $templatecontext['block20col2links'] = theme_almondb_links($theme->settings->block20col2link);
+
+    // Coluna 3.
     $templatecontext['block20col3header'] = format_string($theme->settings->block20col3header);
     $templatecontext['block20col3links'] = theme_almondb_links($theme->settings->block20col3link);
+
+    // Coluna 4.
     $templatecontext['block20col4header'] = format_string($theme->settings->block20col4header);
-    $templatecontext['block20col4caption'] = format_text($theme->settings->block20col4caption);
+    $templatecontext['block20col4links'] = theme_almondb_links($theme->settings->block20col4links);
+
+    // Coluna 5.
+    $templatecontext['block20col5header'] = format_string($theme->settings->block20col5header);
+    $templatecontext['block20col5links'] = theme_almondb_links($theme->settings->block20col5links);
+
+    // Outras informações.
     $templatecontext['block20social'] = format_text($theme->settings->block20social);
     $templatecontext['block20copyright'] = format_text($theme->settings->block20copyright);
+
     return $templatecontext;
 }
+

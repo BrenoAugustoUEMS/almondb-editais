@@ -101,19 +101,21 @@ $description = $description.get_string('underline', 'theme_almondb');
 $default = get_string('block20col3linkdefault', 'theme_almondb');
 $setting = new admin_setting_configtextarea($name, $title, $description, $default, PARAM_RAW, '1', '6');
 $page->add($setting);
+
 // Block 20 col 4 header.
 $name = 'theme_almondb/block20col4header';
 $title = get_string('block20col4header', 'theme_almondb');
 $description = get_string('block20col4headerdesc', 'theme_almondb');
-$default = 'Coluna 4';
+$default = "Company";
 $setting = new admin_setting_configtext($name, $title, $description, $default, PARAM_TEXT);
 $page->add($setting);
 
-// Block 20 col 4 links.
-$name = 'theme_almondb/block20col4links';
-$title = get_string('block20col4links', 'theme_almondb');
-$description = get_string('block20col4linksdesc', 'theme_almondb');
-$default = '<li><a href="#">Link 1</a></li><li><a href="#">Link 2</a></li>';
+// Block 20 col 4 link area.
+$name = 'theme_almondb/block20col4link';
+$title = get_string('block20col4link', 'theme_almondb');
+$description = get_string('block20col4linkdesc', 'theme_almondb');
+$description = $description.get_string('underline', 'theme_almondb');
+$default = get_string('block20col4linkdefault', 'theme_almondb');
 $setting = new admin_setting_configtextarea($name, $title, $description, $default, PARAM_RAW, '1', '6');
 $page->add($setting);
 
@@ -121,15 +123,16 @@ $page->add($setting);
 $name = 'theme_almondb/block20col5header';
 $title = get_string('block20col5header', 'theme_almondb');
 $description = get_string('block20col5headerdesc', 'theme_almondb');
-$default = 'Coluna 5';
+$default = "Help";
 $setting = new admin_setting_configtext($name, $title, $description, $default, PARAM_TEXT);
 $page->add($setting);
 
-// Block 20 col 5 links.
-$name = 'theme_almondb/block20col5links';
-$title = get_string('block20col5links', 'theme_almondb');
-$description = get_string('block20col5linksdesc', 'theme_almondb');
-$default = '<li><a href="#">Link 1</a></li><li><a href="#">Link 2</a></li>';
+// Block 20 col 5 link area.
+$name = 'theme_almondb/block20col5link';
+$title = get_string('block20col5link', 'theme_almondb');
+$description = get_string('block20col5linkdesc', 'theme_almondb');
+$description = $description.get_string('underline', 'theme_almondb');
+$default = get_string('block20col5linkdefault', 'theme_almondb');
 $setting = new admin_setting_configtextarea($name, $title, $description, $default, PARAM_RAW, '1', '6');
 $page->add($setting);
 

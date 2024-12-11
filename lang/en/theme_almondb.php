@@ -606,22 +606,26 @@ $string['block20col4header'] = 'Block 20 col 4 header';
 $string['block20col4headerdesc'] = 'Block 20 column 4 enter header';
 $string['block20col4link'] = 'Block 20 col 4 link';
 $string['block20col4linkdesc'] = 'Block 20 col 4 link area';
-$string['block20col4linkdefault'] = 'About Us|https://themesalmond.com
-                                    Our Story|https://moodle.org/support
-                                    Terms & Condition|https://moodle.org/development
-                                    Privacy Policy|http://docs.moodle.org|Moodle Docs
-                                    Site Map|http://docs.moodle.org/en|Documentation in English|en
-                                    Moodle.com|http://moodle.com/ ';
+$string['block20col4linkdefault'] = 'Contact Us|https://themesalmond.com/contact
+                                    Support|https://moodle.org/support
+                                    Careers|https://moodle.org/jobs
+                                    Accessibility|http://docs.moodle.org/accessibility
+                                    FAQs|http://docs.moodle.org/en|Frequently Asked Questions|en
+                                    Blog|http://moodle.com/blog/ ';
+                                    
+
 $string['block20col5header'] = 'Block 20 col 5 header';
 $string['block20col5headerdesc'] = 'Block 20 column 5 enter header';
 $string['block20col5link'] = 'Block 20 col 5 link';
 $string['block20col5linkdesc'] = 'Block 20 col 5 link area';
-$string['block20col5linkdefault'] = 'About Us|https://themesalmond.com
-                                    Our Story|https://moodle.org/support
-                                    Terms & Condition|https://moodle.org/development
-                                    Privacy Policy|http://docs.moodle.org|Moodle Docs
-                                    Site Map|http://docs.moodle.org/en|Documentation in English|en
-                                    Moodle.com|http://moodle.com/ ';
+$string['block20col5linkdefault'] = 'Community|https://moodle.org/community
+                                    Forums|https://moodle.org/forums
+                                    Developers|https://moodle.org/development
+                                    Translation|http://docs.moodle.org/translation
+                                    Security|http://docs.moodle.org/en|Security in Moodle|en
+                                    News|http://moodle.com/news/ ';
+                                
+
 $string['block20social'] = 'Block 20 social links';
 $string['block20socialdesc'] = 'Block 20 social links';
 $string['block20socialdefault'] = '<ul>
