@@ -105,17 +105,35 @@ $page->add($setting);
 $name = 'theme_almondb/block20col4header';
 $title = get_string('block20col4header', 'theme_almondb');
 $description = get_string('block20col4headerdesc', 'theme_almondb');
-$default = "Company";
+$default = 'Coluna 4';
 $setting = new admin_setting_configtext($name, $title, $description, $default, PARAM_TEXT);
 $page->add($setting);
-// Block 20 col 3 caption.
-$name = 'theme_almondb/block20col4caption';
-$title = get_string('block20col4caption', 'theme_almondb');
-$description = get_string('block20col4captiondesc', 'theme_almondb');
-$description = $description.get_string('underline', 'theme_almondb');
-$default = get_string('block20col4captiondefault', 'theme_almondb');
-$setting = new admin_setting_configtextarea($name, $title, $description, $default, PARAM_RAW, '1', '3');
+
+// Block 20 col 4 links.
+$name = 'theme_almondb/block20col4links';
+$title = get_string('block20col4links', 'theme_almondb');
+$description = get_string('block20col4linksdesc', 'theme_almondb');
+$default = '<li><a href="#">Link 1</a></li><li><a href="#">Link 2</a></li>';
+$setting = new admin_setting_configtextarea($name, $title, $description, $default, PARAM_RAW, '1', '6');
 $page->add($setting);
+
+// Block 20 col 5 header.
+$name = 'theme_almondb/block20col5header';
+$title = get_string('block20col5header', 'theme_almondb');
+$description = get_string('block20col5headerdesc', 'theme_almondb');
+$default = 'Coluna 5';
+$setting = new admin_setting_configtext($name, $title, $description, $default, PARAM_TEXT);
+$page->add($setting);
+
+// Block 20 col 5 links.
+$name = 'theme_almondb/block20col5links';
+$title = get_string('block20col5links', 'theme_almondb');
+$description = get_string('block20col5linksdesc', 'theme_almondb');
+$default = '<li><a href="#">Link 1</a></li><li><a href="#">Link 2</a></li>';
+$setting = new admin_setting_configtextarea($name, $title, $description, $default, PARAM_RAW, '1', '6');
+$page->add($setting);
+
+
 // Block 20 social links.
 $name = 'theme_almondb/block20social';
 $title = get_string('block20social', 'theme_almondb');
