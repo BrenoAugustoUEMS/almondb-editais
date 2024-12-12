@@ -30,7 +30,7 @@ label {
 }
 
 *::-moz-selection {
-  background: #d6b161;
+  background: #1e8336;
   color: #fff;
   text-shadow: none;
 }
@@ -79,7 +79,7 @@ label {
 }
 
 .theme-overlay:before {
-  background: #4272d7 none repeat scroll 0 0;
+  background: #057da6 none repeat scroll 0 0;
   content: "";
   height: 100%;
   left: 0;
@@ -98,8 +98,8 @@ label {
   -webkit-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  background: #4272d7 none repeat scroll 0 0;
-  border: 2px solid #4272d7;
+  background: #057da6 none repeat scroll 0 0;
+  border: 2px solid #057da6;
   border-radius: 0;
   color: #fff;
   cursor: pointer;
@@ -122,7 +122,7 @@ label {
 
 .hybtn:hover {
   background: transparent;
-  color: #4272d7;
+  color: #057da6;
 }
 
 .hybtn.hybtn-lg {
@@ -191,7 +191,7 @@ input:focus {
 }
 
 .header-area {
-  border-top: 5px solid #4272d7;
+  border-top: 5px solid #057da6;
 }
 
 .main-menu li.search-trigger a {
@@ -212,7 +212,7 @@ input:focus {
 }
 
 .main-menu li.active a {
-  color: #4272d7;
+  color: #057da6;
 }
 
 /* End Header Area */
@@ -301,10 +301,16 @@ input:focus {
 
 /*----------------FrontPage---------------------------------------------------------------------------------*/
 
+/* Footer */
+
+.footer-menu li a:hover {
+  color: #45a8c9 !important;
+}
+
 /*Alteração Gap block 02*/
 
 section#block02 div.blockbgwhite div.container div.row {
-  gap: 2em 0;
+  gap: 1em 0;
 }
 
 /* Start Iconbox Area */
@@ -314,11 +320,11 @@ section#block02 div.blockbgwhite div.container div.row {
   width: 100%;
   background-size: cover;
   background-position: center;
-  background-color: #004f9e;
+  background-color: #057da6;
   position: relative;
   z-index: 1;
   overflow: hidden;
-  border-radius: 5px 50px 5px 5px;
+  border-radius: 10px;
   box-shadow: 0 3px 9px 0 rgba(0, 0, 0, 0.3), 0 18px 36px 0 rgba(0, 0, 0, 0.2);
 }
 
@@ -331,7 +337,7 @@ section#block02 div.blockbgwhite div.container div.row {
   margin: 0;
   padding: 30px;
   cursor: pointer;
-  background: linear-gradient(to bottom, #333, #111);
+  background: linear-gradient(to bottom, #057da6, #001f29);
   overflow: hidden;
   transition: all 0.6s ease;
 }
@@ -437,7 +443,7 @@ section#block02 div.blockbgwhite div.container div.row {
 .item-icon i:hover {
   background: transparent;
   border: 3px solid #333;
-  color: #4272d7;
+  color: #057da6;
 }
 
 .item-content {
@@ -488,7 +494,7 @@ section#block02 div.blockbgwhite div.container div.row {
   left: 0;
   top: 0;
   content: "";
-  background: #4272d7;
+  background: #057da6;
   color: #fff;
   z-index: -1;
   -webkit-transform: scaleY(0);
@@ -574,7 +580,7 @@ section#block02 div.blockbgwhite div.container div.row {
   left: 0;
   top: 0;
   content: "";
-  background: #4272d7;
+  background: #057da6;
   color: #fff;
   z-index: -1;
   -webkit-transform: scaleY(0);
@@ -671,7 +677,7 @@ section#block02 div.blockbgwhite div.container div.row {
 }
 
 .video-img-thumbnail a:hover {
-  color: #4272d7;
+  color: #057da6;
 }
 
 .single-choose-item h6 {
@@ -795,11 +801,11 @@ section#block02 div.blockbgwhite div.container div.row {
 }
 
 .blog-btn .read-more-btn:hover {
-  color: #4272d7;
+  color: #057da6;
 }
 
 .blog-tags a:hover {
-  color: #4272d7;
+  color: #057da6;
 }
 
 .carousel-area .section-title-fp h4 {
@@ -861,7 +867,7 @@ section#block02 div.blockbgwhite div.container div.row {
 }
 
 .author-content a:hover {
-  color: #4272d7;
+  color: #057da6;
 }
 
 /* End Carousel Area */
@@ -882,7 +888,7 @@ section#block02 div.blockbgwhite div.container div.row {
 /* End Brand Area */
 /* Start ScrollUp */
 .scrollUp {
-  background: #4272d7;
+  background: #057da6;
   height: 40px;
   width: 40px;
   padding: 0;
