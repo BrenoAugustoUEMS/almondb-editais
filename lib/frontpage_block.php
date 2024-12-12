@@ -672,11 +672,11 @@ function theme_almondb_frontpageblock20() {
 
     // Coluna 4.
     $templatecontext['block20col4header'] = format_string($theme->settings->block20col4header);
-    $templatecontext['block20col4links'] = theme_almondb_links($theme->settings->block20col4links);
+    $templatecontext['block20col4links'] = theme_almondb_links($theme->settings->block20col4link);
 
     // Coluna 5.
     $templatecontext['block20col5header'] = format_string($theme->settings->block20col5header);
-    $templatecontext['block20col5links'] = theme_almondb_links($theme->settings->block20col5links);
+    $templatecontext['block20col5links'] = theme_almondb_links($theme->settings->block20col5link);
 
     // Outras informações.
     $templatecontext['block20social'] = format_text($theme->settings->block20social);
