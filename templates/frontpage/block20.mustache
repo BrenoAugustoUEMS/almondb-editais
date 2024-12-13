@@ -22,38 +22,8 @@
                 <div class="col-lg-3 col-md-6">
                     <div class="footer-widget">
                         <div class="footer-logo">
-                            {{#block20logosmall}}
-                            {{#output.get_compact_logo_url}}
-                                <img src="{{output.get_compact_logo_url}}" alt="{{sitename}}">
-                            {{/output.get_compact_logo_url}} 
-                            {{^output.get_compact_logo_url}}
-                                <div class="widget-title footer-site-name">
-                                    {{{block20col1header}}}
-                                </div>
-                            {{/output.get_compact_logo_url}}
-                            {{/block20logosmall}}
-
-                            {{#block20logologo}}
-                            {{#output.get_logo_url}}     
-                                <img src="{{output.get_logo_url}}" alt="{{sitename}}">
-                            {{/output.get_logo_url}} 
-                            {{^output.get_logo_url}}
-                                <div class="widget-title footer-site-name">
-                                    {{{block20col1header}}}
-                                </div> 
-                            {{/output.get_logo_url}} 
-                            {{/block20logologo}}
-
-                            {{^block20logosmall}}
-                            {{^block20logologo}}
-                            <div class="widget-title footer-site-name">
-                                {{{block20col1header}}}
-                            </div> 
-                            {{/block20logologo}} 
-                            {{/block20logosmall}}  
-                            <div class="footer-dec">
-                            <p>{{{block20col1caption}}}</p>
-                            </div>
+                            <img class="widget-footer-logo my-5" src="{{config.wwwroot}}/theme/almondb/pix/sgp/png/logoSGP-white-wide250h.png" alt="logomarca do Sistema de gestão de projetos da uems na cor branca">
+                            <img class="widget-footer-logo" src="{{config.wwwroot}}/theme/almondb/pix/sgp/png/logo_UemsGov.png" alt="logomarca da uems e governo do estado">
                         </div>
                     </div>
                 </div>

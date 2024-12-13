@@ -218,6 +218,13 @@ input:focus {
 /* End Header Area */
 /* Start Slider Area
 ==================================================*/
+
+.carousel-inner img {
+  width: 100%;
+  object-fit: cover;
+  min-height: 120px;
+}
+
 .single-slider {
   height: 600px;
   background-size: cover;
@@ -305,6 +312,10 @@ input:focus {
 
 .footer-menu li a:hover {
   color: #45a8c9 !important;
+}
+
+.widget-footer-logo {
+  max-width: 220px;
 }
 
 /*Alteração Gap block 02*/
