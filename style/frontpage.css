@@ -376,9 +376,19 @@ section#block02 div.blockbgwhite div.container div.row {
     "Lucida Sans", Arial, sans-serif;
   font-weight: 600;
   text-transform: uppercase;
-  font-size: 2em;
+  font-size: clamp(1.8em, 2vw, 2em); /* Define um tamanho de fonte responsivo */
   color: #fff;
   margin-bottom: 0;
+}
+
+@media (max-width: 480px) {
+  .iconbox-content-heading {
+    font-size: clamp(
+      1.5em,
+      2vw,
+      2em
+    ); /* Ainda menor para telas muito pequenas */
+  }
 }
 
 .iconbox-content-body {
