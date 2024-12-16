@@ -219,7 +219,7 @@ input:focus {
 /* Start Slider Area
 ==================================================*/
 
-.carousel-inner img {
+#page-site-index .carousel-inner img {
   width: 100%;
   object-fit: cover;
   min-height: 120px;
