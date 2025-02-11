@@ -342,6 +342,9 @@ section#block02 div.blockbgwhite div.container div.row {
 .icon-box-content {
   position: relative;
   color: #fff;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
   z-index: 1;
   height: 300px; /* Ajuste conforme a necessidade */
   width: 100%;
@@ -357,7 +360,7 @@ section#block02 div.blockbgwhite div.container div.row {
   position: absolute;
   top: 30%;
   left: 20px; /* Alinhado à esquerda, por exemplo */
-  transform: translateY(-50%) scale(1); /* Removemos o translateX(-50%) para não centralizar horizontalmente */
+  transform: translateY(-30%) scale(1.2); /* Removemos o translateX(-50%) para não centralizar horizontalmente */
   transform-origin: left center; /* Define o ponto de âncora à esquerda do elemento */
   z-index: 4;
   display: flex;
@@ -376,7 +379,7 @@ section#block02 div.blockbgwhite div.container div.row {
     "Lucida Sans", Arial, sans-serif;
   font-weight: 600;
   text-transform: uppercase;
-  font-size: clamp(1.8em, 2vw, 2em); /* Define um tamanho de fonte responsivo */
+  font-size: clamp(2.6em, 2vw, 2em); /* Define um tamanho de fonte responsivo */
   color: #fff;
   margin-bottom: 0;
 }
@@ -393,15 +396,15 @@ section#block02 div.blockbgwhite div.container div.row {
 
 .iconbox-content-body {
   position: absolute;
-  top: 60%; /* Ajuste conforme o necessário */
+  top: 65%; /* Ajuste conforme o necessário */
   left: 40px; /* Posiciona fixamente a partir da esquerda */
-  transform: translateY(0) scale(1);
-  transform-origin: left center; /* Define o ponto de ancoragem do body no lado esquerdo */
+  transform: translateY(0) scale(0.8);
+  transform-origin: left top; /* Define o ponto de ancoragem do body no lado esquerdo */
   z-index: 3;
   display: flex;
-  align-items: center;
+  align-items: start;
   justify-content: flex-start; /* Garante alinhamento à esquerda dentro do container body */
-  font-size: 1.05em;
+  font-size: 1.1em;
   opacity: 0; /* Invisível inicialmente */
   transition: opacity 0.6s, transform 0.6s ease;
 }
@@ -410,7 +413,7 @@ section#block02 div.blockbgwhite div.container div.row {
 .icon-box-content:hover .icon-box-content-headcontainer {
   /* Agora, ao aplicar scale, o ponto de âncora é o lado esquerdo do elemento.
      Ajuste o translateY se precisar que suba mais. */
-  transform: translateY(-180%) scale(0.7);
+  transform: translateY(-120%) scale(1);
   /* Como removemos o translateX(-50%), ajuste apenas o Y para posicionar verticalmente */
 }
 
@@ -419,7 +422,7 @@ section#block02 div.blockbgwhite div.container div.row {
   opacity: 1;
   /* Ajuste apenas o translateY para movê-lo verticalmente,
      mantendo o ancoragem lateral no mesmo ponto. */
-  transform: translateY(-140%) scale(1);
+  transform: translateY(-180%) scale(1);
 }
 
 /* End Iconbox Area */
