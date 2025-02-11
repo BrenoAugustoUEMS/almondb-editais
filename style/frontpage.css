@@ -323,8 +323,8 @@ input:focus {
 section#block02 div.blockbgwhite div.container div.row {
   gap: 1em 0;
 }
-
-/* Start Iconbox Area */
+/* ------------------ CONTAINER PRINCIPAL ------------------ */
+/* 📌 Container principal dos cards */
 .single-course,
 .single-icon-box {
   height: 190px;
@@ -339,90 +339,85 @@ section#block02 div.blockbgwhite div.container div.row {
   box-shadow: 0 3px 9px 0 rgba(0, 0, 0, 0.3), 0 18px 36px 0 rgba(0, 0, 0, 0.2);
 }
 
+/* 📌 Conteúdo do card */
 .icon-box-content {
   position: relative;
   color: #fff;
   display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Mantém espaçamento */
   align-items: flex-start;
-  justify-content: flex-start;
   z-index: 1;
-  height: 300px; /* Ajuste conforme a necessidade */
+  height: 100%;
   width: 100%;
-  margin: 0;
   padding: 30px;
   cursor: pointer;
   background: linear-gradient(to bottom, #057da6, #001f29);
-  overflow: hidden;
   transition: all 0.6s ease;
 }
 
+/* 📌 Container do título e ícone */
 .icon-box-content-headcontainer {
-  position: absolute;
-  top: 30%;
-  left: 20px; /* Alinhado à esquerda, por exemplo */
-  transform: translateY(-30%) scale(1.2); /* Removemos o translateX(-50%) para não centralizar horizontalmente */
-  transform-origin: left center; /* Define o ponto de âncora à esquerda do elemento */
-  z-index: 4;
   display: flex;
   align-items: center;
   gap: 1em;
+  transform-origin: left center;
   transition: transform 0.6s ease;
 }
 
+/* 📌 Ícone */
 .icon-box-icon {
-  font-size: 2em;
-  padding: 0 0.2em;
+  font-size: clamp(2em, 2vw, 4em);
 }
 
+/* 📌 Título do card */
 .iconbox-content-heading {
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
   font-weight: 600;
   text-transform: uppercase;
-  font-size: clamp(2.6em, 2vw, 2em); /* Define um tamanho de fonte responsivo */
+  font-size: clamp(2em, 2vw, 4em);
   color: #fff;
   margin-bottom: 0;
 }
 
-@media (max-width: 480px) {
-  .iconbox-content-heading {
-    font-size: clamp(
-      1.5em,
-      2vw,
-      2em
-    ); /* Ainda menor para telas muito pequenas */
-  }
-}
-
+/* 📌 Corpo do card */
 .iconbox-content-body {
-  position: absolute;
-  top: 65%; /* Ajuste conforme o necessário */
-  left: 40px; /* Posiciona fixamente a partir da esquerda */
-  transform: translateY(0) scale(0.8);
-  transform-origin: left top; /* Define o ponto de ancoragem do body no lado esquerdo */
-  z-index: 3;
-  display: flex;
-  align-items: start;
-  justify-content: flex-start; /* Garante alinhamento à esquerda dentro do container body */
-  font-size: 1.1em;
-  opacity: 0; /* Invisível inicialmente */
-  transition: opacity 0.6s, transform 0.6s ease;
+  width: 100%;
+  opacity: 0;
+  font-size: 1em;
+  line-height: 1.4;
+  transform-origin: left center;
+  transition: opacity 0.6s ease, transform 0.6s ease;
 }
 
-/* No hover */
+/* 📌 Efeito no hover */
 .icon-box-content:hover .icon-box-content-headcontainer {
-  /* Agora, ao aplicar scale, o ponto de âncora é o lado esquerdo do elemento.
-     Ajuste o translateY se precisar que suba mais. */
-  transform: translateY(-120%) scale(1);
-  /* Como removemos o translateX(-50%), ajuste apenas o Y para posicionar verticalmente */
+  transform: translateY(-20%) scale(0.7); /* Desce suavemente */
 }
 
-/* No hover */
 .icon-box-content:hover .iconbox-content-body {
   opacity: 1;
-  /* Ajuste apenas o translateY para movê-lo verticalmente,
-     mantendo o ancoragem lateral no mesmo ponto. */
-  transform: translateY(-180%) scale(1);
+  transform: translateY(-10%);
+}
+
+/* 📌 Responsividade: Ajuste para telas menores */
+@media (max-width: 768px) {
+  .icon-box-content {
+    padding: 20px;
+  }
+
+  .iconbox-content-heading {
+    font-size: clamp(1.5em, 2vw, 2em);
+  }
+
+  .iconbox-content-body {
+    font-size: 0.9em;
+  }
+
+  .icon-box-content:hover .icon-box-content-headcontainer {
+    transform: translateY(-10%) scale(0.95);
+  }
 }
 
 /* End Iconbox Area */
