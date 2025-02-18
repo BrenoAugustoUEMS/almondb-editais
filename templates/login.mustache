@@ -33,16 +33,16 @@
 
 <body {{{ bodyattributes }}} onload="loginFunction()">
 {{> core/local/toast/wrapper}}
+
 <div id="page-wrapper" class="login-background">
     {{{ output.standard_top_of_body_html }}}
     <div id="page" class="container-fluid pt-5 mt-0">
-        <div id="page-content" class="row">
-            <div id="region-main-box" class="col-12">
-                <section id="region-main" class="col-12 h-100" aria-label="{{#str}}content{{/str}}">
-                <div class="login-wrapper">
-                    <div class="login-container">
-                    {{{ output.main_content }}}
-                        <hr>
+        <div id="page-content" class="row justify-content-center align-items-center">
+            <div id="region-main-box" class="col-12 col-md-10">
+                <section id="region-main" class="row login-wrapper">
+                    
+                    <!-- 📌 Coluna Esquerda: Informações de Acesso -->
+                    <div class="col-md-6 login-info">
                         <div class="login-info-box">
                             <h3>🔐 Informações para 1º Acesso</h3>
                             <p>Seja bem-vindo(a)! Para acessar esta Plataforma, utilize as seguintes credenciais conforme seu perfil:</p>
@@ -68,7 +68,12 @@
                             <p class="important"><strong>🔸 Importante:</strong> Por questões de segurança, recomendamos que você altere sua senha após o primeiro acesso.</p>
                         </div>
                     </div>
-                </div>
+
+                    <!-- 📌 Coluna Direita: Formulário de Login -->
+                    <div class="col-md-6 login-container">
+                        {{{ output.main_content }}}
+                    </div>
+
                 </section>
             </div>
         </div>
@@ -81,6 +86,7 @@
 
     {{> theme_boost/footer }}
 </div>
+
 <script>
     "use strict";
     function loginFunction() {
