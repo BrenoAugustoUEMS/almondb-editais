@@ -42,7 +42,7 @@
 }
 
 .login-info-box img {
-  width: 50%;
+  width: 60%;
 }
 
 .login-info-content {
@@ -50,6 +50,11 @@
   box-shadow: inset 0px 4px 6px rgba(0, 0, 0, 0.3);
   border-radius: 16px;
   background-color: #ced4da60;
+}
+
+.login-info-content i {
+  margin-right: 1rem;
+  color: #057da6;
 }
 
 .login-container {
@@ -75,9 +80,18 @@
 /* 📌 RESPONSIVIDADE */
 /* =============================== */
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .login-main-container {
     flex-direction: column; /* Empilha os elementos no mobile */
     margin: 1rem;
+  }
+
+  .login-info-box {
+    margin: 0;
+  }
+
+  .login-info-box img {
+    width: 80%;
+    padding-top: 1rem;
   }
 }
