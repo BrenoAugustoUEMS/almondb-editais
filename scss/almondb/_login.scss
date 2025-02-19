@@ -1,32 +1,83 @@
 /* Login Scss */
 
 .justify-content-center {
-    justify-content: center !important;
+  justify-content: center !important;
 }
 
 .justify-content-left {
-    justify-content: left !important;
+  justify-content: left !important;
 }
 
 .justify-content-right {
-    justify-content: right !important;
+  justify-content: right !important;
 }
 /* External Login */
 .login-identityproviders {
-    display: inline-flex;
-    flex-wrap: wrap;
-    align-content: stretch;
-    align-items: baseline;
+  display: inline-flex;
+  flex-wrap: wrap;
+  align-content: stretch;
+  align-items: baseline;
 }
+
+.login-main-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: auto;
+  background-color: white;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+  border-radius: 16px;
+  justify-content: center;
+}
+
+.login-info-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem 1rem;
+  padding: 1rem;
+  flex: 1;
+  gap: 2rem;
+}
+
+.login-info-box img {
+  width: 50%;
+}
+
+.login-info-content {
+  padding: 1rem;
+  box-shadow: inset 0px 4px 6px rgba(0, 0, 0, 0.3);
+  border-radius: 16px;
+  background-color: #ced4da60;
+}
+
+.login-container {
+  box-shadow: none;
+  flex: 1;
+}
+
 .login-container h2.login-heading {
-    width: 100%;
+  width: 100%;
 }
+
 .login-identityproviders a.login-identityprovider-btn {
-    width: 48%;
-    margin-right: 2%;
+  width: 48%;
+  margin-right: 2%;
 }
 /* Help(?) button */
 .login-background .btn-footer-popover {
-    right: 3rem;
-    bottom: 1rem;
+  right: 3rem;
+  bottom: 1rem;
+}
+
+/* =============================== */
+/* 📌 RESPONSIVIDADE */
+/* =============================== */
+
+@media (max-width: 768px) {
+  .login-main-container {
+    flex-direction: column; /* Empilha os elementos no mobile */
+    margin: 1rem;
+  }
 }

@@ -41,48 +41,44 @@
             <div id="region-main-box" class="col-12 col-md-10">
                 <section id="region-main" class="row login-wrapper">
                     
-                    <!-- 📌 Coluna Esquerda: Informações de Acesso -->
-                    <div class="col-md-6 login-info">
-                        <div class="login-info-box">
-                            <h3>🔐 Informações para 1º Acesso</h3>
-                            <p>Seja bem-vindo(a)! Para acessar esta Plataforma, utilize as seguintes credenciais conforme seu perfil:</p>
-
-                            <div class="user-group">
-                                <h4>✅ Docentes e Técnicos</h4>
-                                <ul>
-                                    <li><strong>Usuário:</strong> Seu <b>e-mail institucional</b></li>
-                                    <li><strong>Senha:</strong> Seu <b>CPF</b> (somente números)</li>
-                                </ul>
+                    <div class="login-main-container">
+                        <!-- 📌 Coluna Esquerda: Informações de Acesso -->
+                        <div class="col-md-6 login-info">
+                            <div class="login-info-box">
+                                <img src="/theme/almondb/pix/sgp/png/logo_UemsGov.png" alt="" class="img-fluid">
+                                <div class="login-info-content">
+                                    <h3>🔐 Informações para 1º Acesso</h3>
+                                    <p>Seja bem-vindo(a)! Para acessar esta Plataforma, utilize as seguintes credenciais conforme seu perfil:</p>
+                                    <div class="user-group">
+                                        <h4>✅ Docentes e Técnicos</h4>
+                                        <ul>
+                                            <li><strong>Usuário:</strong> Seu <b>e-mail institucional</b></li>
+                                            <li><strong>Senha:</strong> Seu <b>CPF</b> (somente números)</li>
+                                        </ul>
+                                    </div>
+                                    <div class="user-group">
+                                        <h4>🎓 Alunos</h4>
+                                        <ul>
+                                            <li><strong>Usuário:</strong> Seu e-mail institucional no formato: <br>
+                                                "<i>seuCPF</i><b>@academicos.uems.br</b>"
+                                            </li>
+                                            <li><strong>Senha:</strong> Seu <b>CPF</b> (somente números)</li>
+                                        </ul>
+                                    </div>
+                                    <p class="important"><strong>🔸 Importante:</strong> Por questões de segurança, recomendamos que você altere sua senha após o primeiro acesso.</p>
+                                </div>
                             </div>
-
-                            <div class="user-group">
-                                <h4>🎓 Alunos</h4>
-                                <ul>
-                                    <li><strong>Usuário:</strong> Seu e-mail institucional no formato: <br>
-                                        "<i>seuCPF</i><b>@academicos.uems.br</b>"
-                                    </li>
-                                    <li><strong>Senha:</strong> Seu <b>CPF</b> (somente números)</li>
-                                </ul>
-                            </div>
-
-                            <p class="important"><strong>🔸 Importante:</strong> Por questões de segurança, recomendamos que você altere sua senha após o primeiro acesso.</p>
                         </div>
-                    </div>
-
-                    <!-- 📌 Coluna Direita: Formulário de Login -->
-                    <div class="col-md-6 login-container">
-                        {{{ output.main_content }}}
+                        <!-- 📌 Coluna Direita: Formulário de Login -->
+                        <div class="col-md-6 login-container">
+                            {{{ output.main_content }}}
+                        </div>
                     </div>
 
                 </section>
             </div>
         </div>
     </div>
-
-    <!-- Adicionando o footer com logo -->
-    <footer class="d-flex justify-content-center align-items-center bg-light rounded-top mx-auto py-2">
-        <div><img src="{{config.wwwroot}}/theme/almondb/pix/sgp/png/logo_UemsGov.png" alt="Logo da UEMS" class="img-fluid" style="max-height: 50px;"></div>
-    </footer>
 
     {{> theme_boost/footer }}
 </div>
