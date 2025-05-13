@@ -43,7 +43,7 @@ $description = get_string('block02countdesc', 'theme_almondb');
 $description = $description.get_string('underline', 'theme_almondb');
 $default = 9;
 $options = [];
-for ($i = 2; $i < ($default); $i++) {
+for ($i = 2; $i <= ($default); $i++) {
      $options[$i] = $i;
 }
 $setting = new admin_setting_configselect($name, $title, $description, $default, $options);
